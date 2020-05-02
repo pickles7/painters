@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/zeezgrt41wiesa2/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.dropbox.com/s/14o68ccxux4cgqd/artist50_model.pkl?raw=1'
+export_file_name = 'artist50_model.pkl'
 
-classes = ['american', 'brownbanded', 'german', 'oriental', 'smokybrown']
+classes = ['Rene_Magritte', 'Frida_Kahlo', 'Paul_Klee', 'Gustav_Klimt', 'Francisco_Goya', 'Vasiliy_Kandinskiy', 'Raphael', 'Andy_Warhol', 'Salvador_Dali', 'Paul_Cezanne', 'Hieronymus_Bosch', 'William_Turner', 'Georges_Seurat', 'Joan_Miro', 'Sandro_Botticelli', 'Amedeo_Modigliani', 'Titian', 'Kazimir_Malevich', 'Diego_Velazquez', 'Diego_Rivera', 'Paul_Gauguin', 'Michelangelo', 'Edouard_Manet', 'El_Greco', 'Mikhail_Vrubel', 'Henri_Matisse', 'Leonardo_da_Vinci', 'Giotto_di_Bondone', 'Claude_Monet', 'Pieter_Bruegel', 'Caravaggio', 'Jackson_Pollock', 'Camille_Pissarro', 'Albrecht_Dürer', 'Rembrandt', 'Marc_Chagall', 'Henri_de_Toulouse-Lautrec', 'Piet_Mondrian', 'Pablo_Picasso', 'Edvard_Munch', 'Vincent_van_Gogh', 'Jan_van_Eyck', 'Albrecht_Du╠êrer', 'Alfred_Sisley', 'Eugene_Delacroix', 'Henri_Rousseau', 'Gustave_Courbet', 'Pierre-Auguste_Renoir', 'Andrei_Rublev', 'Peter_Paul_Rubens', 'Edgar_Degas']
 path = Path(__file__).parent
 
 app = Starlette()
